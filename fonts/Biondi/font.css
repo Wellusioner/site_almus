@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Biondi Regular';
+  src: url('Biondi Regular.eot');
+  src: url('Biondi Regular.woff2') format('woff2'),
+       url('Biondi Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Biondi';
+  src: url('Biondi.woff') format('woff'),
+       url('Biondi.ttf') format('truetype'),
+       url('Biondi.svg#Biondi') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+

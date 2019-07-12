@@ -1,0 +1,218 @@
+@font-face {
+  font-family: 'Proxima-Regular';
+  src: url('../fonts/ProximaNova-Regular/ProximaNova-Regular.eot');
+  src: url('../fonts/ProximaNova-Regular/ProximaNova-Regular.woff') format('woff'),
+  url('../fonts/ProximaNova-Regular/ProximaNova-Regular.woff2') format('woff2'),
+  url('../fonts/ProximaNova-Regular/ProximaNova-Regular.ttf') format('truetype'),
+  url('../fonts/ProximaNova-Regular/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg'),
+  url('../fonts/ProximaNova-Regular/ProximaNova-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima-Bold';
+  src: url('../fonts/ProximaNova-Bold/ProximaNova-Bold.eot');
+  src: url('../fonts/ProximaNova-Bold/ProximaNova-Bold.woff') format('woff'),
+  url('../fonts/ProximaNova-Bold/ProximaNova-Bold.woff2') format('woff2'),
+  url('../fonts/ProximaNova-Bold/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ProximaNova-Bold/ProximaNova-Bold.ttf') format('truetype'),
+  url('../fonts/ProximaNova-Bold/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+#carousel {
+  border-bottom: 2px solid #009785;
+}
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+
+.caption{
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80%;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.caption span{
+  display: block;
+  font-size: 90px;
+  font-family: 'Proxima-Bold' ,sans-serif;
+  text-shadow: 3px 3px 5px rgba(0,0,0, 0.41);
+}
+.caption p {
+  font-size: 36px;
+  font-family: 'Proxima-Bold' ,sans-serif;
+  text-shadow: 3px 3px 5px rgba(0,0,0, 0.41);
+}
+.callbacks_container {
+  position: relative;
+}
+.callbacks_container .rslides1_nav ,
+.callbacks_container .rslides1_nav {
+  position: absolute;
+  top: 55%;
+  width: 75px;
+  height: 140px;
+  -webkit-transform: translateY(-50%) scale(0.8);
+      -ms-transform: translateY(-50%) scale(0.8);
+          transform: translateY(-50%) scale(0.8);
+  font-size: 30px;
+  z-index: 10;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+/*Pager*/
+.rslides_tabs.rslides1_tabs {
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.rslides_tabs.rslides1_tabs li {
+  margin: 0 10px;
+}
+
+.rslides_tabs.rslides1_tabs li a {
+  display: block;
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  background: #009785;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.rslides_tabs.rslides1_tabs  .rslides_here a{
+  background: #fff;
+}
+
+.callbacks_container .rslides1_nav.prev{
+  display: none;
+  left: 30px;
+  background: url('../img/left.png') no-repeat;
+}
+
+.callbacks_container .rslides1_nav.next{
+  display: none;
+  right: 30px;
+  background: url('../img/right.png') no-repeat;
+}
+
+/*Mobile View*/
+
+@media screen and (max-width: 576px) {
+  
+  .caption span {
+    font-size: 30px;
+  }
+
+  .caption p {
+    font-size: 14px;
+  }
+  
+  .rslides_tabs.rslides1_tabs {
+  bottom: 10px;
+}
+
+.rslides_tabs.rslides1_tabs li {
+  margin: 0 5px;
+}
+  
+  .rslides_tabs.rslides1_tabs li a {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+
+/*Tablet View*/
+
+@media screen and (min-width: 577px) and (max-width: 767px) {
+  
+  .caption span {
+    font-size: 60px;
+  }
+
+  .caption p {
+    font-size: 24px;
+  }
+  
+  .rslides_tabs.rslides1_tabs {
+  bottom: 12px;
+}
+
+.rslides_tabs.rslides1_tabs li {
+  margin: 0 8px;
+}
+  
+  .rslides_tabs.rslides1_tabs li a {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+
+/*Tablet View*/
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  
+  .caption span {
+    font-size: 70px;
+  }
+
+  .caption p {
+    font-size: 34px;
+  }
+  
+  .rslides_tabs.rslides1_tabs {
+  bottom: 12px;
+}
+
+.rslides_tabs.rslides1_tabs li {
+  margin: 0 8px;
+}
+  
+  .rslides_tabs.rslides1_tabs li a {
+    width: 10px;
+    height: 10px;
+  }
+}

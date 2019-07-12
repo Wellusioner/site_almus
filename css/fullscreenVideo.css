@@ -1,0 +1,39 @@
+.fullscreen-video {
+  display: block;
+  width: 100% !important;
+}
+
+#carousel {
+  height: 550px;
+  overflow: hidden;
+}
+
+#carousel .unknown {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .fullscreen-video {
+    display: none;
+  }
+  
+  #carousel {
+    height: auto !important;
+  }
+  
+  #carousel .unknown {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 577px) {
+  #carousel {
+    height: auto !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #carousel {
+    height: auto !important;
+  }
+}
